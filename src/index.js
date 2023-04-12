@@ -19,7 +19,8 @@ const allGames = (headQuestion, task) => {
     if (myAnswer !== correctAnswer) {
       console.log(`'${myAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       return console.log(`Let's try again, ${name}!`);
-    } else console.log('Correct!');
+    }
+    console.log('Correct!');
   }
   return console.log(`Congratulations, ${name}!`);
 };

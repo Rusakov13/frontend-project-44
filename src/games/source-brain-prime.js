@@ -7,8 +7,7 @@ for (let i = 0; i <= 50; i += 1) {
   array.push(i);
 }
 
-const headQuestion =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const headQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const task = () => {
   const index = Math.floor(Math.random() * array.length);
