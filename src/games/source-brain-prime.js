@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import allGames from "../index.js";
+import allGames from '../index.js';
 
 const array = [];
 for (let i = 0; i <= 50; i += 1) {
@@ -19,7 +19,7 @@ const task = () => {
       counter += 1;
     }
   }
-  const isPrime = counter === 2 ? "yes" : "no";
+  const isPrime = counter === 2 ? 'yes' : 'no';
   const result = array[index];
   const correctAnswer = isPrime;
   return [result, correctAnswer];

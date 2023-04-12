@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import allGames from "../index.js";
+import allGames from '../index.js';
 
 const array = [];
 for (let i = 0; i <= 50; i += 1) {
   array.push(i);
 }
 
-const headQuestion = "Find the greatest common divisor of given numbers.";
+const headQuestion = 'Find the greatest common divisor of given numbers.';
 
 const task = () => {
   const firstNumber = Math.floor(Math.random() * array.length);
