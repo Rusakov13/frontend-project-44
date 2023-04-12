@@ -27,7 +27,7 @@ const allGames = (headQuestion, task) => {
       console.log("Correct!");
     }
   }
-  return console.log(`Congratulation, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default allGames;
