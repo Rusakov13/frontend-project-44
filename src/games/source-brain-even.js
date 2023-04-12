@@ -2,6 +2,8 @@
 
 import allGames from "../index.js";
 
+const limit = 50;
+
 const array = [];
 for (let i = 0; i <= 50; i += 1) {
   array.push(i);
