@@ -9,3 +9,5 @@ EVEN: https://asciinema.org/a/574060
 CALC: https://asciinema.org/a/zbar1E4PX1VMop7SDZce6un0m
 
 GCD: https://asciinema.org/a/ERlkKAqJlItAGcvJ0ToA4OEbM
+
+PROGRESSION: https://asciinema.org/a/VXfLW17saltVhor4IeQUwlQmX
