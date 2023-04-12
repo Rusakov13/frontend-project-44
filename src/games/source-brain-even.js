@@ -8,7 +8,7 @@ for (let i = 0; i <= 50; i += 1) {
 }
 
 const headQuestion =
-  'Answer "yes" if the result is even, otherwise answer "no".';
+  'Answer "yes" if the number is even, otherwise answer "no".';
 
 const task = () => {
   const index = Math.floor(Math.random() * array.length);
