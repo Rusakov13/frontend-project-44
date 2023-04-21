@@ -2,12 +2,12 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Rusakov13/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Rusakov13/frontend-project-44/actions)",
+  "description": "A game that consists of 5 console commands that test the user's mathematical knowledge",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Aleksandr Rusakov",
   "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
