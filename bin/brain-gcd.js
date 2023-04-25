@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import gcdGame from '../src/games/brain-gcd.js';
+import greatCommoDivisorGame from '../src/games/brain-gcd.js';
 
-gcdGame();
+greatCommoDivisorGame();
