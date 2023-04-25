@@ -8,8 +8,8 @@ const basisProgram = (headQuestion, task) => {
   console.log(`Hello, ${name}!`);
 
   console.log(headQuestion);
-
-  for (let i = 0; i < 3; i += 1) {
+  const questionСounter = 3;
+  for (let i = 0; i < questionСounter; i += 1) {
     let [result, correctAnswer] = task();
     result = String(result);
     correctAnswer = String(correctAnswer);
