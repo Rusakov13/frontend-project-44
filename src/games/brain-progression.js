@@ -30,6 +30,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const progressionGame = () => basisProgram(headQuestion, task);
+const arithmeticProgressionGame = () => basisProgram(headQuestion, task);
 
-export default progressionGame;
+export default arithmeticProgressionGame;

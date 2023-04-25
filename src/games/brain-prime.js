@@ -26,6 +26,6 @@ const task = () => {
   const result = array[index];
   return [result, correctAnswer];
 };
-const primeGame = () => basisProgram(headQuestion, task);
+const primeNumberGame = () => basisProgram(headQuestion, task);
 
-export default primeGame;
+export default primeNumberGame;

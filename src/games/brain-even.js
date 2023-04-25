@@ -20,6 +20,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const evenGame = () => basisProgram(headQuestion, task);
+const evenOrOddGame = () => basisProgram(headQuestion, task);
 
-export default evenGame;
+export default evenOrOddGame;

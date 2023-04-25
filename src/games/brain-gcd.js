@@ -26,6 +26,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const gcdGame = () => basisProgram(headQuestion, task);
+const greatCommoDivisorGame = () => basisProgram(headQuestion, task);
 
-export default gcdGame;
+export default greatCommoDivisorGame;
