@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
@@ -12,7 +10,7 @@ for (let i = 0; i <= limit; i += 1) {
 
 const headQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const task = () => {
+const getTask = () => {
   const index = getRandomNumber(0, 50);
 
   let counter = 0;
@@ -26,6 +24,6 @@ const task = () => {
   const result = array[index];
   return [result, correctAnswer];
 };
-const primeNumberGame = () => basisProgram(headQuestion, task);
+const primeNumberGame = () => basisProgram(headQuestion, getTask);
 
 export default primeNumberGame;

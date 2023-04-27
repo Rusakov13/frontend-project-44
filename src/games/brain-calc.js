@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
@@ -11,12 +9,14 @@ const calculate = (firstNumber, operatorsIndex, secondNumber) => {
       return firstNumber + secondNumber;
     case '-':
       return firstNumber - secondNumber;
-    default:
+    case '*':
       return firstNumber * secondNumber;
+    default:
+      return 'Error!';
   }
 };
 
-const task = () => {
+const getTask = () => {
   const operators = ['+', '-', '*'];
   const operatorsIndex = operators[getRandomNumber(0, 2)];
   const firstNumber = getRandomNumber();
@@ -26,6 +26,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const calculatorGame = () => basisProgram(headQuestion, task);
+const calculatorGame = () => basisProgram(headQuestion, getTask);
 
 export default calculatorGame;

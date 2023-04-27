@@ -1,11 +1,9 @@
-#!/usr/bin/env node
-
 import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const headQuestion = 'What number is missing in the progression?';
 
-const task = () => {
+const getTask = () => {
   const progressionSize = getRandomNumber(5, 10);
   let progressionNumber = getRandomNumber(0, 10);
   if (progressionNumber === 0) {
@@ -30,6 +28,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const arithmeticProgressionGame = () => basisProgram(headQuestion, task);
+const arithmeticProgressionGame = () => basisProgram(headQuestion, getTask);
 
 export default arithmeticProgressionGame;

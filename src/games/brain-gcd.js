@@ -1,20 +1,12 @@
-#!/usr/bin/env node
-
 import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const limit = 50;
-
-const array = [];
-for (let i = 0; i <= limit; i += 1) {
-  array.push(i);
-}
-
 const headQuestion = 'Find the greatest common divisor of given numbers.';
 
-const task = () => {
-  const firstNumber = getRandomNumber(0, 50);
-  const secondNumber = getRandomNumber(0, 50);
+const getTask = () => {
+  const firstNumber = getRandomNumber(1, 50);
+  const secondNumber = getRandomNumber(1, 50);
+  const limit = 50;
   let correctAnswer = 0;
   const result = `${firstNumber} ${secondNumber}`;
 
@@ -26,6 +18,6 @@ const task = () => {
   return [result, correctAnswer];
 };
 
-const greatCommoDivisorGame = () => basisProgram(headQuestion, task);
+const greatCommoDivisorGame = () => basisProgram(headQuestion, getTask);
 
 export default greatCommoDivisorGame;
