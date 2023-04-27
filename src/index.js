@@ -8,7 +8,7 @@ const basisProgram = (headQuestion, getTask) => {
   console.log(headQuestion);
   const questionСounter = 3;
   for (let i = 0; i < questionСounter; i += 1) {
-    let [result, correctAnswer] = getTask();
+    const [result, correctAnswer] = getTask();
 
     const myAnswer = readlineSync.question(`Question: ${result} \nAnswer: `);
 
