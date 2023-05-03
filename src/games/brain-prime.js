@@ -1,29 +1,21 @@
 import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const limit = 50;
-
-const array = [];
-for (let i = 0; i <= limit; i += 1) {
-  array.push(i);
-}
-
 const headQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getTask = () => {
-  const index = getRandomNumber(0, 50);
-
+  const number = getRandomNumber(0, 50);
   let counter = 0;
-  for (let i = 1; i <= array[index]; i += 1) {
-    if (array[index] % i === 0) {
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
       counter += 1;
     }
   }
   const isPrime = counter === 2;
   const correctAnswer = isPrime ? 'yes' : 'no';
-  const result = array[index];
-  return [result, correctAnswer];
+  const result = number;
+  return [String(result), String(correctAnswer)];
 };
-const primeNumberGame = () => basisProgram(headQuestion, getTask);
+const runPrimeNumberGame = () => basisProgram(headQuestion, getTask);
 
-export default primeNumberGame;
+export default runPrimeNumberGame;

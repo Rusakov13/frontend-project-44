@@ -8,9 +8,9 @@ const getTask = () => {
   const isEven = index % 2 === 0;
   const correctAnswer = isEven ? 'yes' : 'no';
   const result = index;
-  return [result, correctAnswer];
+  return [String(result), String(correctAnswer)];
 };
 
-const evenOrOddGame = () => basisProgram(headQuestion, getTask);
+const runEvenOrOddGame = () => basisProgram(headQuestion, getTask);
 
-export default evenOrOddGame;
+export default runEvenOrOddGame;

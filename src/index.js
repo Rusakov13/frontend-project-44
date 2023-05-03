@@ -12,7 +12,7 @@ const basisProgram = (headQuestion, getTask) => {
 
     const myAnswer = readlineSync.question(`Question: ${result} \nAnswer: `);
 
-    if (myAnswer.toString() !== correctAnswer.toString()) {
+    if (myAnswer !== correctAnswer) {
       console.log(`'${myAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       return console.log(`Let's try again, ${name}!`);
     }

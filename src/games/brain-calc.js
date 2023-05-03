@@ -23,9 +23,9 @@ const getTask = () => {
   const secondNumber = getRandomNumber();
   const result = `${firstNumber} ${operatorsIndex} ${secondNumber}`;
   const correctAnswer = calculate(firstNumber, operatorsIndex, secondNumber);
-  return [result, correctAnswer];
+  return [String(result), String(correctAnswer)];
 };
 
-const calculatorGame = () => basisProgram(headQuestion, getTask);
+const runCalculatorGame = () => basisProgram(headQuestion, getTask);
 
-export default calculatorGame;
+export default runCalculatorGame;
