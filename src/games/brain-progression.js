@@ -18,8 +18,8 @@ const createArray = () => {
 };
 
 const getTask = () => {
-  const index = getRandomNumber(0, 8);
   const progression = createArray();
+  const index = getRandomNumber(0, progression.length);
   const correctAnswer = progression[index];
   progression[index] = '..';
   result = result.join(' ');
