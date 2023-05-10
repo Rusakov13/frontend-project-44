@@ -2,7 +2,7 @@ import basisProgram from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const headQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
+const isPrime = (counter) => counter === 2;
 const getTask = () => {
   const number = getRandomNumber(0, 50);
   let counter = 0;
@@ -11,8 +11,8 @@ const getTask = () => {
       counter += 1;
     }
   }
-  const isPrime = counter === 2;
-  const correctAnswer = isPrime ? 'yes' : 'no';
+
+  const correctAnswer = isPrime(counter) ? 'yes' : 'no';
   const result = number;
   return [String(result), String(correctAnswer)];
 };

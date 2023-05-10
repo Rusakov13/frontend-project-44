@@ -7,10 +7,10 @@ let result = 0;
 const createArray = () => {
   const finalProgression = [];
   const progressionSize = getRandomNumber(9, 10);
-  const progressionNumber = getRandomNumber(1, 10);
+  const progressionStep = getRandomNumber(1, 5);
   let firstElementProgress = getRandomNumber(0, 50);
   for (let i = 1; i < progressionSize; i += 1) {
-    firstElementProgress += progressionNumber;
+    firstElementProgress += progressionStep;
     finalProgression.push(firstElementProgress);
   }
   result = finalProgression;
