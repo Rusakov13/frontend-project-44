@@ -12,9 +12,16 @@
 
 #### Для запуска необходимо:
 
-> git clone https://github.com/Rusakov13/frontend-project-44.git
-> make install
-> npm link
+1. Клонировать репозиторий:
+
+   > git clone https://github.com/Rusakov13/frontend-project-44.git
+
+2. Если клонируете репозиторий впервые, то сделайте:
+
+   > make install
+
+3. Сделайте глобальную установку пакета из локальной директории:
+   > npm link
 
 ---
 
